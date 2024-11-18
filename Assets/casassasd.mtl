@@ -1,0 +1,13 @@
+newmtl New_Material_3
+Kd 0.9245283 0.6997893 0.3009078
+d 1
+
+newmtl New_Material_1
+Kd 0.5109023 0.6588266 0.8396226
+d 1
+
+newmtl ProBuilderDefault
+map_Kd GridBox_Default.png
+Kd 1 1 1
+d 1
+
