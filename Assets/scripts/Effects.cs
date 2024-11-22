@@ -7,6 +7,7 @@ public class Effects : MonoBehaviour
     //camera.main.viewporttoray();
     //refs
     public Thirdpersoncontroller tPC;
+    public GameObject linterna;
 
     //bools efectos
     public bool skates = false;
@@ -15,26 +16,42 @@ public class Effects : MonoBehaviour
     public bool atrapasuenos = false;
     public bool tirachinas = false;
     public bool trajedepureza = false;
+    public bool lantern = false;
 
-    //bools
-    
+    //efecto linterna
+    public bool llight = false;
 
-    //llamar efecto
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+
+        if (llight == false && Input.GetKey(KeyCode.E))
         {
-            UsingEffect();
+            llight = true;
+            linterna.SetActive(true);
         }
+        else
+        {
+            llight = false;
+            linterna.SetActive(false);
+        }
+
+
+
+        /*f (Input.GetKeyDown(KeyCode.E))
+       {
+           UsingEffect();
+       } */
     }
 
-    private void UsingEffect()
-    {
-      if (skates == true)
-        {
-            Debug.Log("Hola");
-            //tPC.moveSpeed = tPC.moveSpeed * 2f;
-        }
-    }
+    /*private void UsingEffect()
+     {
+       if (skates == true)
+         {
+             Debug.Log("Hola");
+             //tPC.moveSpeed = tPC.moveSpeed * 2f;
+         }
+     } */
+
+
 }
