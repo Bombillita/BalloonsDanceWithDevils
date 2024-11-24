@@ -24,17 +24,23 @@ public class Effects : MonoBehaviour
 
     private void Update()
     {
-
-        if (llight == false && Input.GetKey(KeyCode.E))
+        if (lantern == true)
         {
-            llight = true;
-            linterna.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                if (llight == false)
+                {
+                    linterna.SetActive(true);
+                    llight = true;
+                }
+                else
+                {
+                    linterna.SetActive(false);
+                    llight = false;
+                }
+            }
         }
-        else
-        {
-            llight = false;
-            linterna.SetActive(false);
-        }
+        
 
 
 

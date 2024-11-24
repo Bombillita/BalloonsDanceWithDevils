@@ -12,4 +12,13 @@ public class exit : MonoBehaviour
             SceneManager.LoadScene("Casa");
         }
     }
-}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Casa");
+        }
+    }
+    }
+
