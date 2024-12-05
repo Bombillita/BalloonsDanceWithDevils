@@ -9,7 +9,7 @@ public class exit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Casa");
+            SceneManager.LoadScene("House");
         }
     }
 
@@ -17,7 +17,7 @@ public class exit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Casa");
+            SceneManager.LoadScene("House");
         }
     }
     }
