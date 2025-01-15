@@ -17,6 +17,7 @@ public class CollectLantern : MonoBehaviour
             doorToOpen.hasKey = true;
             effect.lantern = true;
             canCollect = false;
+            gameObject.SetActive(false);
         }
     }
     private void OnTriggerEnter(Collider other)

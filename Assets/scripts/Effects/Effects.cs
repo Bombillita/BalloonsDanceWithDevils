@@ -19,7 +19,7 @@ public class Effects : MonoBehaviour
     public bool lantern = false;
 
     //efecto linterna
-    public bool llight = false;
+    public bool effectOn = false;
 
 
     private void Update()
@@ -28,36 +28,40 @@ public class Effects : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (llight == false)
+                if (effectOn == false)
                 {
                     linterna.SetActive(true);
-                    llight = true;
+                    effectOn = true;
                 }
                 else
                 {
                     linterna.SetActive(false);
-                    llight = false;
+                    effectOn = false;
                 }
             }
         }
         
+        if (skates == true)
+        {   
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                if (effectOn == false)
+                {
+                    effectOn = true;
+                }
+                else
+                {
+                    effectOn = false;
+                }
 
-
-
-        /*f (Input.GetKeyDown(KeyCode.E))
-       {
-           UsingEffect();
-       } */
+                if (effectOn == true)
+                {
+                   // tPC.
+                }
+            }
+        }
+        
     }
-
-    /*private void UsingEffect()
-     {
-       if (skates == true)
-         {
-             Debug.Log("Hola");
-             //tPC.moveSpeed = tPC.moveSpeed * 2f;
-         }
-     } */
 
 
 }
