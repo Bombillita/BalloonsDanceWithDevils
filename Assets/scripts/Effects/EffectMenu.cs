@@ -5,7 +5,6 @@ using UnityEngine;
 public class EffectMenu : MonoBehaviour
 {
     [SerializeField] private GameObject emenu;
-
     private bool openMenu = false;
 
     private void Update()
@@ -14,29 +13,30 @@ public class EffectMenu : MonoBehaviour
         {
             if (openMenu)
             {
-                Close();
+                CloseE();
             }
             else
             {
-                Open();
+                OpenE();
             }
         }
 
     }
 
     //metodos
-    public void Open()
+    public void OpenE()
     {
         Time.timeScale = 0f;
         emenu.SetActive(true);
         openMenu = true;
     }
 
-    public void Close()
+    public void CloseE()
     {
         emenu.SetActive(false);
         openMenu = false;
         Time.timeScale = 1f;
 
     }
+
 }

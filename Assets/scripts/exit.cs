@@ -1,24 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class exit : MonoBehaviour
 {
-    void Update()
+    public void Exit()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("House");
-        }
+        Application.Quit();
+        Debug.Log("Adios");
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene("House");
-        }
-    }
-    }
-
+}
