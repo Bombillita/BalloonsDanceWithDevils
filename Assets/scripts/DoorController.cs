@@ -7,15 +7,16 @@ public class DoorController : MonoBehaviour
     public bool isinteractive = false;
     public bool delete = false;
     public bool hasKey = false;
+    public GameObject linterna;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") == false)
         {
             return;
         }
 
-        if (hasKey == true)
+        if (hasKey == true && linterna.activeInHierarchy) 
         {
             gameObject.SetActive(false);
         }

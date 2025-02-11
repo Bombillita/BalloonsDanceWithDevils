@@ -15,7 +15,7 @@ public class CollectLantern : MonoBehaviour
         {
             _isCollected = true;
             doorToOpen.hasKey = true;
-            effect.lantern = true;
+            effect.ActivateEffect("lantern");
             canCollect = false;
             gameObject.SetActive(false);
         }

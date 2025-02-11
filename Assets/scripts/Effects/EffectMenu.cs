@@ -5,13 +5,13 @@ using UnityEngine;
 public class EffectMenu : MonoBehaviour
 {
     [SerializeField] private GameObject emenu;
-    private bool openMenu = false;
+    private bool effectMenu = false;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (openMenu)
+            if (effectMenu)
             {
                 CloseE();
             }
@@ -23,18 +23,18 @@ public class EffectMenu : MonoBehaviour
 
     }
 
-    //metodos
+    //metodos pene#led
     public void OpenE()
     {
         Time.timeScale = 0f;
         emenu.SetActive(true);
-        openMenu = true;
+        effectMenu = true;
     }
 
     public void CloseE()
     {
         emenu.SetActive(false);
-        openMenu = false;
+        effectMenu = false;
         Time.timeScale = 1f;
 
     }
