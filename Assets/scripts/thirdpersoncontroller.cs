@@ -8,7 +8,7 @@ public class Thirdpersoncontroller : MonoBehaviour
     public float rotationSpeed = 200f;
     private Vector3 input;
     private Rigidbody _rb;
-
+    public Transform cameraTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +23,29 @@ public class Thirdpersoncontroller : MonoBehaviour
     {
         float _horizontal = Input.GetAxisRaw("Horizontal");
         float _vertical = Input.GetAxisRaw("Vertical");
+
+        // Calcular la dirección de movimiento con respecto a la cámara
+        Vector3 forward = cameraTransform.forward;
+        Vector3 right = cameraTransform.right;
+
+        // Ignorar el componente Y para mantener el movimiento en el plano horizontal
+        forward.y = 0;
+        right.y = 0;
+
+        input= (forward *_vertical + right * _horizontal).normalized;
         //Guardaremos el input para usarlo en el FixedUpdate
-        input = new Vector3(_horizontal, 0f, _vertical);
+      
         //para que s mueva en la direccion conrrenta respecto a donde mira , hay qu trasnformar el input que sea en el espacio local y no es espacio global
-        input = transform.TransformDirection(input);
+       
+
+        if (input.magnitude > 0)
+        {
+          
+
+            // Rotar suavemente hacia la dirección de movimiento
+            Quaternion targetRotation = Quaternion.LookRotation(input);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
 
         
     }
