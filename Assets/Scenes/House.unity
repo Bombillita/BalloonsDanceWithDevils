@@ -21646,6 +21646,80 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8431667294739835066, guid: 91b45cf11785f274fb669657842e4cfb, type: 3}
   m_PrefabInstance: {fileID: 1068862373}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1070803517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1070803520}
+  - component: {fileID: 1070803519}
+  - component: {fileID: 1070803518}
+  m_Layer: 0
+  m_Name: "dialogopasil\xF1lo (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1070803518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070803517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d232ec1d3566ee46af2259d386e6862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 811723275}
+  lines:
+  - "A la derecha est\xE1 la habitaci\xF3n de PAP\xC1."
+  - "Parece que est\xE1 ocupado."
+  - "Puedo aprovechar para entrar al \xE1tico."
+  textSpeed: 0.05
+  infoPanel: {fileID: 1352992135}
+  player: {fileID: 1725013056}
+--- !u!65 &1070803519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070803517}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.857668, y: 4.4936733, z: 0.9469681}
+  m_Center: {x: -0.32414627, y: 0.22955453, z: 0.02651596}
+--- !u!4 &1070803520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070803517}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.6611347, y: 1.02, z: 36.89955}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1083579150
 Mesh:
   m_ObjectHideFlags: 0
@@ -24346,80 +24420,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1133302489}
   m_SourcePrefab: {fileID: 100100000, guid: 84ccb330dcf9e1f47938cbfd0b5e2357, type: 3}
---- !u!1 &1376829791
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1376829794}
-  - component: {fileID: 1376829793}
-  - component: {fileID: 1376829792}
-  m_Layer: 0
-  m_Name: "dialogopasil\xF1lo"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1376829792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376829791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d232ec1d3566ee46af2259d386e6862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 811723275}
-  lines:
-  - "A la derecha est\xE1 la habitaci\xF3n de PAP\xC1."
-  - "Parece que est\xE1 ocupado."
-  - "Puedo aprovechar para entrar al \xE1tico."
-  textSpeed: 0.05
-  infoPanel: {fileID: 1352992135}
-  player: {fileID: 1725013056}
---- !u!65 &1376829793
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376829791}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.857668, y: 4.4936733, z: 0.9469681}
-  m_Center: {x: -0.32414627, y: 0.22955453, z: 0.02651596}
---- !u!4 &1376829794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1376829791}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6611347, y: 1.02, z: 36.89955}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1382473679
 Mesh:
   m_ObjectHideFlags: 0
@@ -29370,7 +29370,7 @@ MonoBehaviour:
   - "PAP\xC1: VETE A DORMIR."
   - "PAP\xC1: AHORA."
   textSpeed: 0.05
-  infoPanel: {fileID: 1376829791}
+  infoPanel: {fileID: 1352992135}
   player: {fileID: 1725013056}
 --- !u!65 &1689069820
 BoxCollider:
@@ -37422,7 +37422,7 @@ SceneRoots:
   - {fileID: 383061178}
   - {fileID: 386440546}
   - {fileID: 1068862373}
-  - {fileID: 1376829794}
+  - {fileID: 1070803520}
   - {fileID: 1689069821}
   - {fileID: 200370485}
   - {fileID: 1359720756}
