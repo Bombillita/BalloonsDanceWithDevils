@@ -1519,6 +1519,7 @@ MonoBehaviour:
   - "Pap\xE1 me lo compr\xF3 nada m\xE1s llegamos aqu\xED."
   textSpeed: 0.1
   infoPanel: {fileID: 1122646706}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!65 &135945987
 BoxCollider:
@@ -2926,6 +2927,7 @@ MonoBehaviour:
   - "Ahora no tengo sue\xF1o."
   textSpeed: 0.1
   infoPanel: {fileID: 1284381473}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!65 &211053531
 BoxCollider:
@@ -4840,7 +4842,7 @@ MonoBehaviour:
   tirachinas: 0
   trajedepureza: 0
   lighton: 0
-  lantern: 0
+  lantern: 1
   scissors: 0
   skates: 0
 --- !u!114 &367946943
@@ -8771,6 +8773,7 @@ MonoBehaviour:
   - recoge las flores de las estanterias
   textSpeed: 0.1
   infoPanel: {fileID: 1220914709}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!136 &790142346
 CapsuleCollider:
@@ -11322,6 +11325,7 @@ MonoBehaviour:
   - "Aqu\xED est\xE1n todos mis  juguetes."
   textSpeed: 0.1
   infoPanel: {fileID: 116231094}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!1 &1225411945 stripped
 GameObject:
@@ -11372,6 +11376,7 @@ MonoBehaviour:
   - "Tendr\xEDa que poner aqu\xED mis libros ma\xF1ana."
   textSpeed: 0.1
   infoPanel: {fileID: 320559097}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!65 &1225411951
 BoxCollider:
@@ -14082,6 +14087,7 @@ MonoBehaviour:
   - "Aqu\xED est\xE1n mis libros."
   textSpeed: 0.1
   infoPanel: {fileID: 1706427605}
+  dialoguefinished: 1
   player: {fileID: 367946929}
 --- !u!1 &1526930104
 GameObject:
@@ -16932,8 +16938,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1983573677}
   - component: {fileID: 1983573680}
-  - component: {fileID: 1983573679}
   - component: {fileID: 1983573678}
+  - component: {fileID: 1983573681}
   m_Layer: 0
   m_Name: CargarEscena
   m_TagString: Untagged
@@ -16975,27 +16981,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 10.844977, y: 10.706467, z: 9.260634}
-  m_Center: {x: -0.044730578, y: 4.8532333, z: 1.944715}
---- !u!114 &1983573679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983573676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d232ec1d3566ee46af2259d386e6862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 1482738538}
-  lines:
-  - 'ME CAGO EN TUS MUERTOS '
-  textSpeed: 0.1
-  infoPanel: {fileID: 1220914709}
-  player: {fileID: 367946929}
-  dialoguefinished: 0
+  m_Size: {x: 10.844977, y: 10.706468, z: 6.406257}
+  m_Center: {x: -0.044730652, y: 4.853233, z: -0.046449758}
 --- !u!114 &1983573680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17008,10 +16995,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6943281b34264e54bbd047abea06f3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Test
-  dialogofinal: {fileID: 1983573678}
-  daref: {fileID: 1983573679}
-  gameManager: {fileID: 328617556}
+  gamemanager: {fileID: 328617556}
+  colref: {fileID: 1983573678}
+  daref: {fileID: 1983573681}
+  daref2: {fileID: 790142345}
+  scenename: Test
+  dialoguefinished: 0
+  onarea: 0
+--- !u!114 &1983573681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983573676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd58d54b82ee814391ad7c8f77168a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 1482738538}
+  lines:
+  - jeacgeisrfhuyufsdh
+  textSpeed: 0.1
+  infoPanel: {fileID: 1220914709}
+  dialoguefinished: 1
+  player: {fileID: 367946929}
 --- !u!1 &1988445700
 GameObject:
   m_ObjectHideFlags: 0

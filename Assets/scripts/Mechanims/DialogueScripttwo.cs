@@ -10,6 +10,7 @@ public class DialogueScripttwo : MonoBehaviour
     private int index = 0;
     public GameObject infoPanel;
     private bool isPlayerInRange = false;  // Controla si el jugador está dentro del área
+    public bool dialoguefinished = true;
 
     public GameObject player;  // Referencia al objeto del jugador
     private PlayerController playerController;  // Componente de control del jugador
@@ -51,6 +52,7 @@ public class DialogueScripttwo : MonoBehaviour
     // Inicia el diálogo
     public void StartDialogue()
     {
+        dialoguefinished = false;
         // Desactivar el control de movimiento del jugador
         playerController.enabled = false;  // Desactivamos el script de control del jugador
 
@@ -88,6 +90,7 @@ public class DialogueScripttwo : MonoBehaviour
     // Cerrar el diálogo
     public void EndDialogue()
     {
+        dialoguefinished=true;
         // Reactivar el control de movimiento del jugador
         playerController.enabled = true;  // Volvemos a activar el script de control del jugador
 
