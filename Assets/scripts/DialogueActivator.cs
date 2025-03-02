@@ -49,7 +49,7 @@ public class DialogueActivator : MonoBehaviour
         dialogueText.text = string.Empty;
         infoPanel.SetActive(true);
         StartCoroutine(WriteLine());
-        dialoguefinished = true;
+        dialoguefinished = false;
     }
     IEnumerator WriteLine()
     {
@@ -83,7 +83,8 @@ public class DialogueActivator : MonoBehaviour
 
         infoPanel.SetActive(false);
         gameObject.SetActive(false);
-       dialoguefinished = false;
+       dialoguefinished = true;
+       Debug.Log("El diálogo ha terminado. 'dialoguefinished' es: " + dialoguefinished);
     
     }
     private void OnTriggerEnter(Collider other)
