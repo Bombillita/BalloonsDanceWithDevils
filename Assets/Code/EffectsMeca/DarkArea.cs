@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DarkArea : MonoBehaviour
 {
-    public Renderer pRender;
+    //public Renderer pRender;
     public Collider pCollider;
     public bool dark = true;
     public EffectsPlayer effect;
@@ -22,12 +22,12 @@ public class DarkArea : MonoBehaviour
 
         if (dark == true)
         {
-            pRender.enabled = true;
+            //pRender.enabled = true;
             pCollider.enabled = true;
         }
         else
         {
-            pRender.enabled = false;
+            //pRender.enabled = false;
             pCollider.enabled = false;
         }
     }

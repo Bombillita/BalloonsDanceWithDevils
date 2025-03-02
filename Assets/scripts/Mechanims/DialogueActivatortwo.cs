@@ -14,6 +14,8 @@ public class DialogueActivatortwo : MonoBehaviour
     public GameObject player;  // Referencia al objeto del jugador
     private PlayerController playerController;  // Componente de control del jugador
 
+    public bool dialoguefinished = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,7 @@ public class DialogueActivatortwo : MonoBehaviour
         dialogueText.text = string.Empty; // Limpiar el texto
         infoPanel.SetActive(true);  // Activar el panel de diálogo
         StartCoroutine(WriteLine());  // Comenzar a escribir la primera línea
+        dialoguefinished = false;
     }
 
     // Escribe la línea de diálogo
@@ -85,6 +88,7 @@ public class DialogueActivatortwo : MonoBehaviour
 
         infoPanel.SetActive(false);  // Desactivar el panel de diálogo
         gameObject.SetActive(false);  // Desactivar el GameObject donde está el Trigger y el código
+        dialoguefinished = true;
     }
 
     // Detectar cuando el jugador entra en el área de diálogo

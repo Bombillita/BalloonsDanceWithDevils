@@ -6,6 +6,8 @@ public class ObjPicker : MonoBehaviour
 {
     public GameObject tempItem;
     public TypeItem currenItem;
+
+    public int flowersPick = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +26,8 @@ public class ObjPicker : MonoBehaviour
             currenItem.Pick(this.transform);
             tempItem = null;
             return;
+            
+            
 
         }
         //Comprueba si hay alg�n valor asignado y lo puedes soltar

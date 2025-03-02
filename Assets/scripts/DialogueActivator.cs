@@ -14,6 +14,8 @@ public class DialogueActivator : MonoBehaviour
     public GameObject player;
     private PlayerController tpc;
 
+    public bool dialoguefinished = false;
+
     void Start()
     {
         dialogueText.text = string.Empty;
@@ -47,6 +49,7 @@ public class DialogueActivator : MonoBehaviour
         dialogueText.text = string.Empty;
         infoPanel.SetActive(true);
         StartCoroutine(WriteLine());
+        dialoguefinished = true;
     }
     IEnumerator WriteLine()
     {
@@ -80,6 +83,7 @@ public class DialogueActivator : MonoBehaviour
 
         infoPanel.SetActive(false);
         gameObject.SetActive(false);
+       dialoguefinished = false;
     
     }
     private void OnTriggerEnter(Collider other)

@@ -37,16 +37,7 @@ public class EffectsPlayer : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (lighton == false)
-                {
-                    linterna.SetActive(true);
-                    lighton = true;
-                }
-                else
-                {
-                    linterna.SetActive(false);
-                    lighton = false;
-                }
+                ToggleLantern();
             }
         }
 
@@ -113,6 +104,20 @@ public class EffectsPlayer : MonoBehaviour
                 scissors = true;
                 break;
 
+        }
+    }
+
+     public void ToggleLantern()
+    {
+        if (lighton == false)
+        {
+            linterna.SetActive(true); 
+            lighton = true;  
+        }
+        else
+        {
+            linterna.SetActive(false); 
+            lighton = false;  
         }
     }
 }
