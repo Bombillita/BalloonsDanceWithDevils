@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CollectScissors : MonoBehaviour
 {
-    public Effects effect;
+    public EffectsPlayer effect;
     public bool _isCollected = false;
     public bool canCollect = false;
 

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BreakableScissors : MonoBehaviour
 {
-    private Effects eref;
+    private EffectsPlayer eref;
     public bool cancut = false;
 
     private void OnTriggerStay(Collider other)

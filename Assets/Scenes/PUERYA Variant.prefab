@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8699199997968361527
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 959418637824328265, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_Name
+      value: PUERYA Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409541683761151544, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_Size.z
+      value: 3.2753258
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409541683761151544, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_Center.y
+      value: -0.13014284
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409541683761151544, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_Center.z
+      value: -1.1376629
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.307336
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.7701745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.109
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.4292
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 54.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6004159783969147323, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350594502109295787, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 68c6fb81ea1c10f499396798d1f9cf9d, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 959418637824328265, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3721414674082520427}
+    - targetCorrespondingSourceObject: {fileID: 959418637824328265, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7947148016483368107}
+  m_SourcePrefab: {fileID: 100100000, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+--- !u!1 &8496408364330461822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 959418637824328265, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+  m_PrefabInstance: {fileID: 8699199997968361527}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3721414674082520427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496408364330461822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40eb9cbe39761349b3ef8f01f513e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expanel: {fileID: 0}
+  caninteract: 1
+--- !u!114 &7947148016483368107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8496408364330461822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce85d5f5f58710b48a9f9a562d4234e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 0}
+  lines:
+  - "Est\xE1 muy oscuro..."
+  - Te da miedo la oscuridad.
+  - "Deber\xEDas de buscar una linterna"
+  textSpeed: 0.1
+  infoPanel: {fileID: 0}
+  player: {fileID: 0}

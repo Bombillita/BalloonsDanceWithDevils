@@ -12,14 +12,14 @@ public class DialogueScript : MonoBehaviour
     private bool isPlayerInRange = false;
 
     public GameObject player;
-    private Thirdpersoncontroller tpc;
+    private PlayerController tpc;
 
 
     void Start()
     {
         dialogueText.text = string.Empty;
         infoPanel.SetActive(false);
-        tpc = player.GetComponent<Thirdpersoncontroller>();
+        tpc = player.GetComponent<PlayerController>();
     }
 
 
@@ -65,7 +65,7 @@ public class DialogueScript : MonoBehaviour
     {
         foreach (char letter in lines[index].ToCharArray())
         {
-            dialogueText.text += letter;  // Añadir letra por letra al texto
+            dialogueText.text += letter;  // Aï¿½adir letra por letra al texto
             yield return new WaitForSeconds(textSpeed);  // Pausa entre cada letra
         }
     }

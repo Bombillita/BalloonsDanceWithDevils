@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectLantern : MonoBehaviour
 {
     public DoorController doorToOpen;
-    public Effects effect;
+    public EffectsPlayer effect;
     public bool _isCollected = false;
     public bool canCollect = false;
 

@@ -12,13 +12,13 @@ public class DialogueActivator : MonoBehaviour
     private bool isPlayerInRange = false;
 
     public GameObject player;
-    private Thirdpersoncontroller tpc;
+    private PlayerController tpc;
 
     void Start()
     {
         dialogueText.text = string.Empty;
         infoPanel.SetActive(false);
-        tpc = player.GetComponent<Thirdpersoncontroller>();
+        tpc = player.GetComponent<PlayerController>();
     }
 
 
