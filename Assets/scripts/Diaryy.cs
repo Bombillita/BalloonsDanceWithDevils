@@ -7,6 +7,7 @@ public class Diaryy : MonoBehaviour
     public bool diary = false;
     public GameObject obj;
 
+
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
