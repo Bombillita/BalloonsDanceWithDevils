@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public string SceneName;
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        SceneManager.LoadScene(SceneName);
+       if (Input.GetKeyDown(KeyCode.E) && other.CompareTag("Player"))
+        { 
+            
+            SceneManager.LoadScene(SceneName);
+        }
+        
     }
 }

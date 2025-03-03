@@ -14,6 +14,9 @@ public class DialogueScripttwo : MonoBehaviour
 
     public GameObject player;  // Referencia al objeto del jugador
     private PlayerController playerController;  // Componente de control del jugador
+    public bool CargaOtraEscena = false;
+    public int OtraEscena;
+
 
     // Start is called before the first frame update
     void Start()
@@ -94,7 +97,11 @@ public class DialogueScripttwo : MonoBehaviour
         // Reactivar el control de movimiento del jugador
         playerController.enabled = true;  // Volvemos a activar el script de control del jugador
 
-        infoPanel.SetActive(false);  // Desactivar el panel de diálogo
+        infoPanel.SetActive(false);  // Desactivar el panel de diálogoç
+        if(CargaOtraEscena == true)
+        {
+            Application.LoadLevel(OtraEscena);
+        }
     }
 
     // Detectar cuando el jugador entra en el área de diálogo
