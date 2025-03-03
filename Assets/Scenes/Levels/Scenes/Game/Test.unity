@@ -20,12 +20,12 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0.078616396, b: 0.23584908, a: 1}
+  m_AmbientEquatorColor: {r: 0.008143486, g: 0.008880914, b: 0.009433985, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_AmbientIntensity: 0.15
+  m_AmbientMode: 1
+  m_SubtractiveShadowColor: {r: 0.1740833, g: 0.18889418, b: 0.2264151, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.541
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.09753353, g: 0.12211134, b: 0.16604526, a: 0.541}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 16fd72331b0608b42b2f768ab42d7500, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -277,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &33196539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1763436431}
   lines:
-  - A dormir
+  - "Tendr\xEDa que dormir otra vez."
   textSpeed: 0.1
-  infoPanel: {fileID: 33196538}
+  infoPanel: {fileID: 892937593}
   dialoguefinished: 1
   player: {fileID: 846793613}
   CargaOtraEscena: 1
@@ -608,7 +608,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5283019, g: 0.18689926, b: 0.18689926, a: 1}
+  m_Color: {r: 0.20558916, g: 0.23758538, b: 0.41509432, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -653,7 +653,7 @@ Light:
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 5000
-  m_UseColorTemperature: 1
+  m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -1574,7 +1574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &892937594
 Transform:
   m_ObjectHideFlags: 0
@@ -2110,6 +2110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1789628818}
+  - component: {fileID: 1789628819}
   m_Layer: 0
   m_Name: Enviroments
   m_TagString: Untagged
@@ -2134,6 +2135,27 @@ Transform:
   - {fileID: 2021799725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1789628819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789628817}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 12.578115, y: 7.5157633, z: 0.40434265}
+  m_Center: {x: 11.320928, y: 3.2578816, z: -44.287437}
 --- !u!1 &1969889779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,8 +2407,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 309979500}
     m_Modifications:
     - target: {fileID: 965043464699320652, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 965043464699320652, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
       propertyPath: orthographic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 965043464699320652, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.047169805
+      objectReference: {fileID: 0}
+    - target: {fileID: 965043464699320652, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.024697397
+      objectReference: {fileID: 0}
+    - target: {fileID: 965043464699320652, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.024697397
       objectReference: {fileID: 0}
     - target: {fileID: 3646602020159543121, guid: db225c614fa9b854fb05092f6ab6f848, type: 3}
       propertyPath: target
