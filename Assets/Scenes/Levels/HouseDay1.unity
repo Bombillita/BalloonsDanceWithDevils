@@ -6514,15 +6514,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.04
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6556,6 +6556,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lilium_Model
       objectReference: {fileID: 0}
+    - target: {fileID: 1646733720424155422, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 884f8c3a27e202348aba37a2294aca09, type: 2}
+    - target: {fileID: 1791587680172130520, guid: 7cffcf66bf9123f40b85c72652fb5aa2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 344fb3849707c8f42996bb3e2945bf32, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
