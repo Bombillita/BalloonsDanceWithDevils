@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -10,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 input;
     private Rigidbody _rb;
     public Transform cameraTransform;
-
+    public Animator mianim;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,8 +23,8 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        float _horizontal = Input.GetAxisRaw("Horizontal");
-        float _vertical = Input.GetAxisRaw("Vertical");
+        float _horizontal = Input.GetAxis("Horizontal");
+        float _vertical = Input.GetAxis("Vertical");
 
         // Calcular la direcci�n de movimiento con respecto a la c�mara
         Vector3 forward = cameraTransform.forward;
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour
             Quaternion targetRotation = Quaternion.LookRotation(input);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
+        mianim.SetFloat("hv_magnitud", new Vector2(_horizontal, _vertical).magnitude);
 
 
     }
