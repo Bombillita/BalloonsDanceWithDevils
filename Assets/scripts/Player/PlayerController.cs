@@ -23,8 +23,8 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        float _horizontal = Input.GetAxis("Horizontal");
-        float _vertical = Input.GetAxis("Vertical");
+        float _horizontal = Input.GetAxisRaw("Horizontal");
+        float _vertical = Input.GetAxisRaw("Vertical");
 
         // Calcular la direcci�n de movimiento con respecto a la c�mara
         Vector3 forward = cameraTransform.forward;
