@@ -7,6 +7,7 @@ public class Diaryy : MonoBehaviour
     public bool diary = false;
     public GameObject obj;
     public GameObject dialogopadre;
+ 
 
     private void OnTriggerStay(Collider other)
     {
