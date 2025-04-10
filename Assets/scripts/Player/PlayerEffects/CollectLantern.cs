@@ -8,11 +8,13 @@ public class CollectLantern : MonoBehaviour
     public EffectsPlayer effect;
     public bool _isCollected = false;
     public bool canCollect = false;
+    public DialogueScripttwo ds;
 
     private void Update()
     {
         if (canCollect == true && Input.GetKeyDown(KeyCode.E))
         {
+            ds.enabled = false;
             _isCollected = true;
             doorToOpen.hasKey = true;
             effect.ActivateEffect("lantern");
