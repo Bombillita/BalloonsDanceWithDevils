@@ -8,6 +8,7 @@ TagManager:
   - Panel
   - Hydra
   - Recolectable
+  - Selectable
   layers:
   - Default
   - TransparentFX

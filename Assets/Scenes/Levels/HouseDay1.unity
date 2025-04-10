@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: escritorioLilium
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f3057b84bf849af4dba3d9e0623f4847, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5049,7 +5053,7 @@ GameObject:
   - component: {fileID: 344663735}
   m_Layer: 0
   m_Name: asset_lantern_1_3
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6106,7 +6110,7 @@ GameObject:
   - component: {fileID: 423784726}
   m_Layer: 0
   m_Name: asset_lantern_0
-  m_TagString: Untagged
+  m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12452,6 +12456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: camaLilium
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fbebf030cb49f91439c32a907d2cab14, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17064,6 +17072,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4bbba2b9b9fb0614fb40f84da5a49294, type: 3}
   m_PrefabInstance: {fileID: 1109446792}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1117860090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1117860091}
+  m_Layer: 0
+  m_Name: pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117860091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117860090}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.301, z: 1.021}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1725013057}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1120725114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19170,6 +19209,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1274752865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1274752866}
+  - component: {fileID: 1274752867}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1274752866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274752865}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1583996517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1274752867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274752865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc9371aeb2acd604ea07f75714f2cf65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1725013057}
+  pivot: {fileID: 1117860091}
 --- !u!1001 &1275938036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22813,6 +22898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 383061178}
+  - {fileID: 1274752866}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609949424 stripped
@@ -25364,6 +25450,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 147428c46ba4d8c46ac369e095cdf6f4, type: 3}
       propertyPath: m_Name
       value: EstanteriaLilium
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 147428c46ba4d8c46ac369e095cdf6f4, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30968,6 +31058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PUERYA
       objectReference: {fileID: 0}
+    - target: {fileID: 959418637824328265, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 1041039329738533641, guid: 0a212b99025ed88408b3329d2bfde45e, type: 3}
       propertyPath: linterna
       value: 
@@ -31114,7 +31208,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7332597563499889255, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1117860091}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
 --- !u!1001 &5759479200454476539
