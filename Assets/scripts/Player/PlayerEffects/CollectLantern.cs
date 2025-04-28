@@ -9,17 +9,34 @@ public class CollectLantern : MonoBehaviour
     public bool _isCollected = false;
     public bool canCollect = false;
     public DialogueScripttwo ds;
+    public GameObject linternaPENE;
 
     private void Update()
     {
         if (canCollect == true && Input.GetKeyDown(KeyCode.E))
         {
-            ds.enabled = false;
             _isCollected = true;
             doorToOpen.hasKey = true;
             effect.ActivateEffect("lantern");
             canCollect = false;
-            gameObject.SetActive(false);
+            linternaPENE.SetActive(false);
+
+            if (ds.dialoguefinished)
+            {
+                StartCoroutine(DeactivateDialoguegfeugu());
+            }
+            else
+            {
+                ds.enabled = true;
+            }
+
+        }
+
+        IEnumerator DeactivateDialoguegfeugu()
+        {
+            yield return new WaitForSeconds(1f);
+
+            ds.enabled = false;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -33,5 +50,8 @@ public class CollectLantern : MonoBehaviour
             canCollect = false;
         }
     }
+
+  
+
 }
 
