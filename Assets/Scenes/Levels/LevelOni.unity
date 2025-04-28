@@ -3087,7 +3087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 233212644}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &233212644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5607,7 +5607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 504031886}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &504031886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9385,7 +9385,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 847475430}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &847475430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10282,7 +10282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1037029411}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &1037029411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11148,7 +11148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1216821666}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &1216821666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15387,7 +15387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1714194605}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &1714194605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16013,6 +16013,10 @@ PrefabInstance:
       propertyPath: lantern
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6481287114020357225, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7332597563499889255, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16064,13 +16068,40 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8594180732959818456, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
       insertIndex: 3
       addedObject: {fileID: 1805065220}
+    - targetCorrespondingSourceObject: {fileID: 8594180732959818456, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1805065221}
   m_SourcePrefab: {fileID: 100100000, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
 --- !u!4 &1805065215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7332597563499889255, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
   m_PrefabInstance: {fileID: 1805065214}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1805065218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6481287114020357225, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+  m_PrefabInstance: {fileID: 1805065214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711570588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda602443b1a34545aa6c00cd275321f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1805065220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711570588}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c5cf1bb990a71408c13d63ac7ba1e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emenu: {fileID: 523368775}
+--- !u!114 &1805065221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16079,10 +16110,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711570588}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27c5cf1bb990a71408c13d63ac7ba1e5, type: 3}
+  m_Script: {fileID: 11500000, guid: c565c7cdd93188441b36f2b11dd3c873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emenu: {fileID: 523368775}
+  objetosRecolectados: 0
+  objetosParaCompletarNivel: 4
+  rangoRecolectar: 3
+  levelManger: {fileID: 328617556}
 --- !u!82 &1831257456 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5452927798358566574, guid: bf07c0ba1abe9c94b9710eed8a60f4d0, type: 3}
@@ -16347,7 +16381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1905204200}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &1905204200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16704,7 +16738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1951937434}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &1951937434
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16990,7 +17024,7 @@ MonoBehaviour:
   textSpeed: 0.1
   infoPanel: {fileID: 1220914709}
   dialoguefinished: 1
-  player: {fileID: 0}
+  player: {fileID: 1711570588}
   CargaOtraEscena: 1
   OtraEscena: 3
 --- !u!1 &1988445700
@@ -18245,7 +18279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 2119718776}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1805065218}
 --- !u!65 &2119718776
 BoxCollider:
   m_ObjectHideFlags: 0
