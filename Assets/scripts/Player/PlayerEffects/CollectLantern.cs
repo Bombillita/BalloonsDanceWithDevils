@@ -8,8 +8,8 @@ public class CollectLantern : MonoBehaviour
     public EffectsPlayer effect;
     public bool _isCollected = false;
     public bool canCollect = false;
-    public DialogueScripttwo ds;
-    public GameObject linternaPENE;
+    public Collider col;
+    public GameObject linternasprite;
 
     private void Update()
     {
@@ -19,25 +19,12 @@ public class CollectLantern : MonoBehaviour
             doorToOpen.hasKey = true;
             effect.ActivateEffect("lantern");
             canCollect = false;
-            linternaPENE.SetActive(false);
+            col.enabled = false;
+            linternasprite.SetActive(false);
 
-            if (ds.dialoguefinished)
-            {
-                StartCoroutine(DeactivateDialoguegfeugu());
-            }
-            else
-            {
-                ds.enabled = true;
-            }
 
         }
 
-        IEnumerator DeactivateDialoguegfeugu()
-        {
-            yield return new WaitForSeconds(1f);
-
-            ds.enabled = false;
-        }
     }
     private void OnTriggerEnter(Collider other)
     {

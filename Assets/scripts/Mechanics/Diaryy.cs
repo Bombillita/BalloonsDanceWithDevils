@@ -7,6 +7,7 @@ public class Diaryy : MonoBehaviour
     public bool diary = false;
     public GameObject obj;
     public GameObject dialogopadre;
+    public Collider col;
  
 
     private void OnTriggerStay(Collider other)
@@ -16,6 +17,7 @@ public class Diaryy : MonoBehaviour
             diary = true;
             dialogopadre.SetActive(true);
             obj.SetActive(false);
+            col.enabled = false;
         }
     }
 }
