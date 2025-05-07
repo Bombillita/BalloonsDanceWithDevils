@@ -21055,7 +21055,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.224
+      value: -11.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21063,7 +21063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.081
+      value: -7.13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37502,6 +37502,14 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 811723275}
+    - target: {fileID: 1260677068924735011, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.6990905
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678479529088503487, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.955333
+      objectReference: {fileID: 0}
     - target: {fileID: 2576374837813792990, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
       propertyPath: diary
       value: 
@@ -37518,6 +37526,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -8.51
       objectReference: {fileID: 0}
+    - target: {fileID: 4036849250904198828, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.6990905
+      objectReference: {fileID: 0}
     - target: {fileID: 4277959606687957224, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
       propertyPath: player
       value: 
@@ -37530,6 +37542,14 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 811723275}
+    - target: {fileID: 4786967361918163571, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.552
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445032253496384970, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.6990905
+      objectReference: {fileID: 0}
     - target: {fileID: 7180819828093850991, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.649
@@ -37622,6 +37642,10 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 811723275}
+    - target: {fileID: 8426083248031406002, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.98
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
