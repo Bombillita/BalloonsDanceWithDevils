@@ -11,6 +11,7 @@ public class CameraSettings : MonoBehaviour
     public List<Renderer> habitacion1 = new List<Renderer>();
     public List<Renderer> habitacion2 = new List<Renderer>();
     public List<Renderer> habitacion3 = new List<Renderer>();
+    public List<Renderer> habitacion4 = new List<Renderer>();
 
     private List<Renderer> paredesOcultas = new List<Renderer>(); //lista de paredes ocultas
 
@@ -34,6 +35,10 @@ public class CameraSettings : MonoBehaviour
             else if (habitacion3.Contains(hit.collider.GetComponent<Renderer>()) || hit.collider.GetComponent<SpriteRenderer>())
             {
                 nuevasParedesOcultas = habitacion3;
+            }
+            else if (habitacion4.Contains(hit.collider.GetComponent<Renderer>()) || hit.collider.GetComponent<SpriteRenderer>())
+            {
+                nuevasParedesOcultas = habitacion4;
             }
         }
 
