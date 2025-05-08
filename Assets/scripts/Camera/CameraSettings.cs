@@ -23,15 +23,15 @@ public class CameraSettings : MonoBehaviour
         if (Physics.Raycast(player.position, dir, out RaycastHit hit, dir.magnitude, obstacleLayer))
         {
 
-            if (habitacion1.Contains(hit.collider.GetComponent<Renderer>()))
+            if (habitacion1.Contains(hit.collider.GetComponent<Renderer>()) && hit.collider.GetComponent<SpriteRenderer>())
             {
                 nuevasParedesOcultas = habitacion1;
             }
-            else if (habitacion2.Contains(hit.collider.GetComponent<Renderer>()))
+            else if (habitacion2.Contains(hit.collider.GetComponent<Renderer>()) && hit.collider.GetComponent<SpriteRenderer>())
             {
                 nuevasParedesOcultas = habitacion2;
             }
-            else if (habitacion3.Contains(hit.collider.GetComponent<Renderer>()))
+            else if (habitacion3.Contains(hit.collider.GetComponent<Renderer>()) && hit.collider.GetComponent<SpriteRenderer>())
             {
                 nuevasParedesOcultas = habitacion3;
             }
