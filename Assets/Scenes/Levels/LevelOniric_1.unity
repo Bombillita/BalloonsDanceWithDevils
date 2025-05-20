@@ -57323,7 +57323,7 @@ GameObject:
   - component: {fileID: 1255314287}
   - component: {fileID: 1255314286}
   - component: {fileID: 1255314285}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: darkArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57359,7 +57359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pCollider: {fileID: 1255314288}
   dark: 1
-  effect: {fileID: 0}
+  effect: {fileID: 1725013061}
 --- !u!65 &1255314286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57379,8 +57379,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 53.221344, y: 7.593603, z: 2.197754}
-  m_Center: {x: 2.8624306, y: 0.79090023, z: -0.59887695}
+  m_Size: {x: 53.221344, y: 7.593603, z: 4.1991196}
+  m_Center: {x: 2.8624306, y: 0.79090023, z: -1.5995598}
 --- !u!212 &1255314287
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108357,6 +108357,14 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 963194228}
+    - target: {fileID: 6481287114020357225, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+      propertyPath: lantern
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6481287114020357225, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
+      propertyPath: obstacleLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7332597563499889255, guid: c1f48fc4f9d44e0449cea6b3d8f03295, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
