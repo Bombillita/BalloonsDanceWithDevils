@@ -7,6 +7,7 @@ public class ColliderActivator : MonoBehaviour
     public Collider collidertrigger;
     public Collider colliderpro;
     public Diaryy diario;
+    public DialogueScript ds;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,11 +15,13 @@ public class ColliderActivator : MonoBehaviour
         {
 
             colliderpro.enabled = true;
+            ds.enabled = true;
 
         }
         else
         {
             colliderpro.enabled = false;
+            ds.enabled = false;
         }
 
     }

@@ -6,7 +6,7 @@ public class DialogueScripttwo : MonoBehaviour
 {
     public TextMeshProUGUI dialogueText;
     public string[] lines;
-    public float textSpeed = 0.1f;
+    public float textSpeed = 0.5f;
     private int index = 0;
     public GameObject infoPanel;
     private bool isPlayerInRange = false;  

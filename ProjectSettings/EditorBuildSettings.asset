@@ -12,12 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/HouseDay1.unity
     guid: cc88258c6c5c310458aa7465db3aa412
   - enabled: 1
+    path: Assets/Scenes/Levels/LevelOniric_1.unity
+    guid: 30e1f2a36ec9b0d4b9fc165ece9c127d
+  - enabled: 0
     path: Assets/Scenes/Levels/LevelOni.unity
     guid: 4ccd2b799554c234e86fdbbff7d23b8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/LiliumRoom.unity
     guid: e6b14dfbca3868b49b33afc6a83b0cff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/DoorRoom.unity
     guid: bacd690c9c8fc9c469fb58491995856e
   - enabled: 0

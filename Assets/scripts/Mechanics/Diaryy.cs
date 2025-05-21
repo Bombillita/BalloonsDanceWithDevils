@@ -7,17 +7,22 @@ public class Diaryy : MonoBehaviour
     public bool diary = false;
     public GameObject obj;
     public GameObject dialogopadre;
-    public Collider col;
- 
+    public DialogueScripttwo ds;
 
+    private void Update()
+    {
+        if (ds.dialoguefinished == true && diary == true)
+        {
+            obj.SetActive(false);
+            ds.enabled = false;
+        }
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             diary = true;
-            dialogopadre.SetActive(true);
-            obj.SetActive(false);
-            col.enabled = false;
+            dialogopadre.SetActive(true);     
         }
     }
 }
