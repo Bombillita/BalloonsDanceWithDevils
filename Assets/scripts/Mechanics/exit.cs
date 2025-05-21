@@ -15,7 +15,7 @@ public class Exit : MonoBehaviour
 
     public void StartNew()
     {
-        SceneManager.LoadScene("House");
+        SceneManager.LoadScene("HouseDay1");
     }
 
 }
