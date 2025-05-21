@@ -8,9 +8,7 @@ public class LoadScenedialogue : MonoBehaviour
     public Collider colref;
     public DialogueScripttwo daref2;
     public string scenename;
-   
 
-    public bool onarea = false;
 
     private void Update()
     {
@@ -24,14 +22,10 @@ public class LoadScenedialogue : MonoBehaviour
         else
         {
             colref.enabled = false;
-            
+
         }
 
     }
-        
-    
+
+
 }
-
-
-
-

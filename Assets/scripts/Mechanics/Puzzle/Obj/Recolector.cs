@@ -4,26 +4,26 @@ using UnityEngine;
 
 public class Recolector : MonoBehaviour
 {
-    public int objetosRecolectados = 0;  // Cuenta cuántos objetos ha recogido el jugador
-    public int objetosParaCompletarNivel = 4;  // Número de objetos necesarios para completar el nivel
-    public float rangoRecolectar = 3f;  // Distancia para detectar los objetos recolectables
-    private GameObject objetoCercano;  // El objeto cercano que puede ser recogido
+    public int objetosRecolectados = 0;  
+    public int objetosParaCompletarNivel = 4;  
+    public float rangoRecolectar = 3f;  
+    private GameObject objetoCercano;  
     public GameManager levelManger;
 
     // Update se llama una vez por frame
     void Update()
     {
-        // Detectar el objeto más cercano dentro del rango
+      
         DetectarObjetoCercano();
 
-        // Si el jugador presiona "E" y hay un objeto cercano, lo recoge
+     
         if (Input.GetKeyDown(KeyCode.E) && objetoCercano != null)
         {
             RecogerObjeto();
         }
     }
 
-    // Detecta el objeto más cercano dentro del rango de recolección
+ 
     private void DetectarObjetoCercano()
     {
         float distanciaMinima = rangoRecolectar;
@@ -51,13 +51,12 @@ public class Recolector : MonoBehaviour
     {
         if (objetoCercano != null)
         {
-            objetosRecolectados++;  // Aumentar el contador de objetos recolectados
-            objetoCercano.SetActive(false);  // Destruir el objeto recogido
+            objetosRecolectados++;  
+            objetoCercano.SetActive(false);  
 
             // Mostrar cuántos objetos ha recogido el jugador
             Debug.Log("Objetos recolectados: " + objetosRecolectados);
 
-            // Verificar si el jugador ha recogido suficientes objetos
             if (objetosRecolectados >= objetosParaCompletarNivel)
             {
                 CompletarNivel();

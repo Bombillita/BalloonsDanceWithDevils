@@ -4,31 +4,41 @@ using UnityEngine;
 
 public class DarkArea : MonoBehaviour
 {
-    public SpriteRenderer pRender;
+   // public SpriteRenderer pRender;
     public Collider pCollider;
     public bool dark = true;
     public EffectsPlayer effect;
+    public bool iluminado = false;
+    public GameObject negro;
 
     private void Update()
     {
-        if (effect.raycasthit == true)
+        if (effect.raycasthit == true && iluminado == false)
         {
             dark = false;
+            iluminado = true;
         }
-        else
+        
+        if (effect.raycasthit == false)
         {
             dark = true;
         }
 
         if (dark == true)
         {
-            pRender.enabled = true;
             pCollider.enabled = true;
         }
-        else
+
+        if (dark == false)
         {
-            pRender.enabled = false;
             pCollider.enabled = false;
         }
+
+        if (dark == false && iluminado == true)
+        {
+            pCollider.enabled = false;
+            negro.SetActive(false);
+        }
+
     }
 }

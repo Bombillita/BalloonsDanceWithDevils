@@ -6,13 +6,22 @@ public class KeyController : MonoBehaviour
 {
     public DoorControllerKey doorToOpen;
     public bool _isCollected = false;
+    public DialogueScripttwo dscajas;
+    public DialogueScripttwo dspuerta;
+    public interactibleObj interc;
 
 private void Update()
 {
-    if (_isCollected && Input.GetKeyDown(KeyCode.E))
+    if (_isCollected == true && Input.GetKeyDown(KeyCode.E))
         {
-            
-            Destroy(gameObject);
+            doorToOpen.hasKey = true;
+
+            if (dscajas.dialoguefinished == true)
+            {
+                dscajas.enabled = false;
+                dspuerta.enabled = false;
+                interc.caninteract = false;
+            }
          
         }
 
@@ -22,15 +31,12 @@ private void Update()
 
         if (other.CompareTag("Player") == true && _isCollected == false)
         {
-            _isCollected = true;
-            doorToOpen.hasKey = true;
-            
+            _isCollected = true;                 
 
         }
         else
         {
             _isCollected = false;
-            doorToOpen.hasKey = false;
         }
     }
 }

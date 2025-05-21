@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/LiliumRoom.unity
     guid: e6b14dfbca3868b49b33afc6a83b0cff
+  - enabled: 1
+    path: Assets/Scenes/Levels/HouseDay2.unity
+    guid: 05af0c9dc3cf2744288abcc9559fd80d
   - enabled: 0
     path: Assets/Scenes/Levels/DoorRoom.unity
     guid: bacd690c9c8fc9c469fb58491995856e
