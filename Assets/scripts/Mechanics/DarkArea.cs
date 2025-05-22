@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class DarkArea : MonoBehaviour
 {
-   // public SpriteRenderer pRender;
+    Transform playerTransform;
+    public float requiredDistance;
+
+   public SpriteRenderer pRender;
     public Collider pCollider;
     public bool dark = true;
+    public bool alreadyActive;
     public EffectsPlayer effect;
-    public bool iluminado = false;
     public GameObject negro;
+    public float timedark=5f;
+    private float timedarkcounter;
+
+    private void Start()
+    {
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
+    }
 
     private void Update()
     {
-        if (effect.raycasthit == true && iluminado == false)
+        //if (effect.raycasthit == true && dark == true)
+        //{
+        //    dark = false;
+        //    timedarkcounter = timedark;
+        //}
+
+        if ((playerTransform.position - transform.position).magnitude <= requiredDistance && effect.lighton == true)
         {
             dark = false;
-            iluminado = true;
-        }
-        
-        if (effect.raycasthit == false)
-        {
-            dark = true;
+            timedarkcounter = timedark;
         }
 
         if (dark == true)
@@ -31,14 +42,26 @@ public class DarkArea : MonoBehaviour
 
         if (dark == false)
         {
-            pCollider.enabled = false;
+            if (!alreadyActive)
+            {
+                pCollider.enabled = false;
+            }
+            pRender.enabled = false;
+        }
+        if (timedarkcounter > 0 && effect.raycasthit == false)
+        {
+            timedarkcounter -= Time.deltaTime; 
+            if (timedarkcounter <= 0)
+            {
+                dark = true;
+                alreadyActive = true;
+            }
         }
 
-        if (dark == false && iluminado == true)
-        {
-            pCollider.enabled = false;
-            negro.SetActive(false);
-        }
+    }
+
+    private void DarkEvent()
+    {
 
     }
 }
