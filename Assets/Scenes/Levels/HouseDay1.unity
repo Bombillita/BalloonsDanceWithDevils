@@ -41678,7 +41678,6 @@ GameObject:
   - component: {fileID: 2109954026}
   - component: {fileID: 2109954025}
   - component: {fileID: 2109954028}
-  - component: {fileID: 2109954029}
   m_Layer: 0
   m_Name: Diario
   m_TagString: Untagged
@@ -41702,6 +41701,7 @@ MonoBehaviour:
   obj: {fileID: 344663733}
   dialogopadre: {fileID: 1689069818}
   ds: {fileID: 2109954028}
+  panel: {fileID: 182013178}
 --- !u!65 &2109954026
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41763,19 +41763,6 @@ MonoBehaviour:
   player: {fileID: 1725013056}
   CargaOtraEscena: 0
   OtraEscena: 0
---- !u!114 &2109954029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109954024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc86b5cddd9c4a438089e139fdb92ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 182013178}
 --- !u!1 &2111518104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}

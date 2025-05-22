@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Diaryy : MonoBehaviour
 {
@@ -22,7 +23,28 @@ public class Diaryy : MonoBehaviour
         if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
         {
             diary = true;
-            dialogopadre.SetActive(true);     
+            dialogopadre.SetActive(true);
         }
+    }
+
+
+    public GameObject panel;
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            panel.SetActive(true);
+        }
+
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            panel.SetActive(false);
+        }
+
     }
 }
