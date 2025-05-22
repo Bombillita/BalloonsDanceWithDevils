@@ -23903,6 +23903,79 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 3184323499006561277, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
   m_PrefabInstance: {fileID: 1286946828253494246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1135844053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135844056}
+  - component: {fileID: 1135844055}
+  - component: {fileID: 1135844054}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1135844054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135844053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848d462f99c6e9d4f9abbc2f951376d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueText: {fileID: 811723275}
+  lines:
+  - 1 diario
+  textSpeed: 0.05
+  infoPanel: {fileID: 1352992135}
+  player: {fileID: 1725013056}
+  dialoguefinished: 0
+--- !u!65 &1135844055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135844053}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.5399714, y: 1, z: 6.3314896}
+  m_Center: {x: -0.13807726, y: 0, z: -0.48962784}
+--- !u!4 &1135844056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135844053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2109954027}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1142100187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41691,7 +41764,6 @@ GameObject:
   - component: {fileID: 2109954027}
   - component: {fileID: 2109954026}
   - component: {fileID: 2109954025}
-  - component: {fileID: 2109954028}
   m_Layer: 0
   m_Name: Diario
   m_TagString: Untagged
@@ -41714,7 +41786,7 @@ MonoBehaviour:
   diary: 0
   obj: {fileID: 344663733}
   dialogopadre: {fileID: 1689069818}
-  ds: {fileID: 2109954028}
+  coldialogo: {fileID: 1135844053}
   panel: {fileID: 182013178}
 --- !u!65 &2109954026
 BoxCollider:
@@ -41751,32 +41823,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 344663734}
+  - {fileID: 1135844056}
   m_Father: {fileID: 1753297583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2109954028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109954024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bd58d54b82ee814391ad7c8f77168a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueText: {fileID: 811723275}
-  lines:
-  - Un DIARIO.
-  - "Tiene muchas p\xE1ginas arrancadas"
-  - 'PAPA: LILIUM! Ya he llegado!'
-  - "Tengo que volver a mi habitaci\xF3n r\xE1pido"
-  textSpeed: 0.1
-  infoPanel: {fileID: 1352992135}
-  dialoguefinished: 1
-  player: {fileID: 1725013056}
-  CargaOtraEscena: 0
-  OtraEscena: 0
 --- !u!1 &2111518104 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 525d883e1c7c32e4da8d530244336f6d, type: 3}

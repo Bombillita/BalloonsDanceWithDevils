@@ -8,16 +8,8 @@ public class Diaryy : MonoBehaviour
     public bool diary = false;
     public GameObject obj;
     public GameObject dialogopadre;
-    public DialogueScripttwo ds;
+    public GameObject coldialogo;
 
-    private void Update()
-    {
-        if (ds.dialoguefinished == true && diary == true)
-        {
-            obj.SetActive(false);
-            StartCoroutine(AdiosDiario());
-        }
-    }
 
 
     private void OnTriggerStay(Collider other)
@@ -26,6 +18,8 @@ public class Diaryy : MonoBehaviour
         {
             diary = true;
             dialogopadre.SetActive(true);
+            coldialogo.SetActive(true);
+            obj.SetActive(false);
 
         }
     }
@@ -48,14 +42,6 @@ public class Diaryy : MonoBehaviour
         {
             panel.SetActive(false);
         }
-
-    }
-
-    private IEnumerator AdiosDiario()
-    {
-        yield return new WaitForSeconds(0.5f);
-
-        ds.enabled = false;
 
     }
 }
