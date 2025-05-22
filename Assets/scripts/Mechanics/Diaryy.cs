@@ -18,12 +18,15 @@ public class Diaryy : MonoBehaviour
             StartCoroutine(AdiosDiario());
         }
     }
+
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             diary = true;
             dialogopadre.SetActive(true);
+
         }
     }
 
