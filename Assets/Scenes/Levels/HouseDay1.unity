@@ -26635,6 +26635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274752866}
   - component: {fileID: 1274752867}
+  - component: {fileID: 1274752868}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -26671,6 +26672,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1725013057}
   pivot: {fileID: 0}
+--- !u!114 &1274752868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274752865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 091118b2df5981f4a877103ce7ddf01e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: HouseDay1
 --- !u!1001 &1275938036
 PrefabInstance:
   m_ObjectHideFlags: 0
