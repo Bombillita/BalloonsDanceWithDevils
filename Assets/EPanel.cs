@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class EPanel : MonoBehaviour
 {
     public GameObject panel;
+    public EPanel script;
 
     public void OnTriggerEnter(Collider other)
     {

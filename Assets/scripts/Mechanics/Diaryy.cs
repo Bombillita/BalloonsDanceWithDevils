@@ -15,7 +15,7 @@ public class Diaryy : MonoBehaviour
         if (ds.dialoguefinished == true && diary == true)
         {
             obj.SetActive(false);
-            ds.enabled = false;
+            StartCoroutine(AdiosDiario());
         }
     }
     private void OnTriggerStay(Collider other)
@@ -46,5 +46,13 @@ public class Diaryy : MonoBehaviour
             panel.SetActive(false);
         }
 
+    }
+
+    private IEnumerator AdiosDiario()
+    {
+            yield return new WaitForSeconds(0.5f); 
+
+            ds.enabled = false;
+        
     }
 }
