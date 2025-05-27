@@ -12,6 +12,12 @@ public class PlayerController : MonoBehaviour
     private Rigidbody _rb;
     public Transform cameraTransform;
     public Animator mianim;
+
+    public AudioSource pasos;
+    private bool _Hactive;
+
+    private bool _Vactive;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +55,39 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
         mianim.SetFloat("hv_magnitud", new Vector2(_horizontal, _vertical).magnitude);
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            _Hactive = true;
+            pasos.Play();
+        }
+
+        if (Input.GetButtonDown("Vertical"))
+        {
+            _Vactive = true;
+            pasos.Play();
+        }
+
+        if (Input.GetButtonUp("Horizontal"))
+        {
+            _Hactive = false;
+
+            if (_Vactive == false)
+            {
+                pasos.Pause();
+            }
+            
+        }
+
+        if (Input.GetButtonUp("Vertical"))
+        {
+            _Vactive = false;
+
+            if (_Hactive == false)
+            {
+                pasos.Pause();
+            }
+        }
 
 
     }

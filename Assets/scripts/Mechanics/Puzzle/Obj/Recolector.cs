@@ -10,16 +10,19 @@ public class Recolector : MonoBehaviour
     private GameObject objetoCercano;  
     public GameManager levelManger;
 
+    public AudioSource pickOBJ;
+
     // Update se llama una vez por frame
     void Update()
     {
       
         DetectarObjetoCercano();
 
-     
+
         if (Input.GetKeyDown(KeyCode.E) && objetoCercano != null)
         {
             RecogerObjeto();
+            pickOBJ.Play();
         }
     }
 

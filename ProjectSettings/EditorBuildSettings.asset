@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Levels/LevelOni.unity
     guid: 4ccd2b799554c234e86fdbbff7d23b8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/LiliumRoom.unity
     guid: e6b14dfbca3868b49b33afc6a83b0cff
   - enabled: 1
