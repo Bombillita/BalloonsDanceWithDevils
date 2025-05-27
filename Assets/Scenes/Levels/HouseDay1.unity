@@ -42938,6 +42938,10 @@ PrefabInstance:
       propertyPath: diary
       value: 
       objectReference: {fileID: 2109954025}
+    - target: {fileID: 2576374837813792990, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
+      propertyPath: SceneName
+      value: LevelOni_1
+      objectReference: {fileID: 0}
     - target: {fileID: 3569216625632427333, guid: 15b7fded5662fa14da0e460bfba98331, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.69
